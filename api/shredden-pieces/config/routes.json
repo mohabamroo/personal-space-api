@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/shredden-pieces",
+      "handler": "shredden-pieces.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/shredden-pieces/count",
+      "handler": "shredden-pieces.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/shredden-pieces/:id",
+      "handler": "shredden-pieces.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/shredden-pieces",
+      "handler": "shredden-pieces.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/shredden-pieces/:id",
+      "handler": "shredden-pieces.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/shredden-pieces/:id",
+      "handler": "shredden-pieces.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
