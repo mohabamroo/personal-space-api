@@ -17,14 +17,13 @@ console.log("jsonFile", jsonFile);
 
 module.exports = async () => {
   let count = await strapi.query("shredden-pieces").count();
-  if (count < 1) {
-    let deleteRes = await strapi.query("shredden-pieces").delete({});
-    console.log("jsonFile");
-    let prmoises = jsonFile.diaryEntries.map((item) => {
-      strapi.query("shredden-pieces").create({
-        ...item,
-      });
+
+  let deleteRes = await strapi.query("shredden-pieces").delete({});
+  console.log("jsonFile");
+  let prmoises = jsonFile.diaryEntries.map((item) => {
+    strapi.query("shredden-pieces").create({
+      ...item,
     });
-    let responses = await Promise.all(prmoises);
-  }
+  });
+  let responses = await Promise.all(prmoises);
 };
