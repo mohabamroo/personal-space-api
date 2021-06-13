@@ -17,7 +17,7 @@ console.log("jsonFile", jsonFile);
 
 module.exports = async () => {
   let count = await strapi.query("shredden-pieces").count();
-  // if (count < 1) {
+  if (count < 1) {
     let deleteRes = await strapi.query("shredden-pieces").delete({});
     console.log("jsonFile");
     let prmoises = jsonFile.diaryEntries.map((item) => {
@@ -26,5 +26,5 @@ module.exports = async () => {
       });
     });
     let responses = await Promise.all(prmoises);
-  // }
+  }
 };
