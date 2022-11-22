@@ -1,3 +1,3 @@
-# Strapi application
+# Personal space for shredden pieces of mind
 
-A quick description of your strapi application
+Developed using Strapi.js

@@ -1,9 +1,7 @@
 "use strict";
-console.log("jsonFile");
 
 const jsonFilePath = "./diary.json";
 const jsonFile = require(jsonFilePath);
-console.log("jsonFile", jsonFile);
 
 /**
  * An asynchronous bootstrap function that runs before

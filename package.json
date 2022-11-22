@@ -2,7 +2,7 @@
   "name": "personal-platform",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Personal Space - Admin Portal (Strapi.js)",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
